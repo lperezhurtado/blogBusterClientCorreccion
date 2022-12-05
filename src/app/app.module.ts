@@ -1,3 +1,4 @@
+import { DropdownRegisterPageComponent } from './component/shared/dropdown-register-page/dropdown-register-page.component';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,11 +11,15 @@ import { MenuComponent } from './component/menu/menu.component';
 
 import { PostPlistAdminComponent } from './component/post/PostPlistAdmin/PostPlistAdmin.component';
 import { SearchUnroutedComponent } from './component/shared/search-unrouted/search-unrouted.component';
-import { DropdownRegisterPageComponent } from './component/shared/dropdown-register-page/dropdown-register-page.component';
 import { PaginationUnroutedComponent } from './component/shared/pagination-unrouted/pagination-unrouted.component';
 import { PaginationService } from './service/pagination.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostService } from './service/Post.service';
+import { UserPlistAdminComponent } from './component/user/user-plist-admin/user-plist-admin.component';
+import { UserViewAdminComponent } from './component/user/user-view-admin/user-view-admin.component';
+import { PostViewAdminComponent } from './component/post/post-view-admin/post-view-admin.component';
+import { UserDeleteAdminComponent } from './component/user/user-delete-admin/user-delete-admin.component';
+import { TableUserComponent } from './component/shared/details-user/table-user/table-user.component';
 
 
 
@@ -25,8 +30,13 @@ import { PostService } from './service/Post.service';
     MenuComponent,
     PostPlistAdminComponent,
     SearchUnroutedComponent,
+    PaginationUnroutedComponent,
+    UserPlistAdminComponent,
+    UserViewAdminComponent,
+    PostViewAdminComponent,
     DropdownRegisterPageComponent,
-    PaginationUnroutedComponent
+    UserDeleteAdminComponent,
+    TableUserComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +45,7 @@ import { PostService } from './service/Post.service';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [   
+  providers: [
     PaginationService,
     PostService
   ],

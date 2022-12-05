@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col">
-      <h1 class="text-center mb-5">Lista de Posts</h1>      
+      <h1 class="text-center mb-5">Lista de Posts</h1>
       <div class="col-md text-end d-flex justify-content-center align-items-center mb-3 ">
         <a [routerLink]="['/admin/post/new']" class="btn btn-primary mx-3">Alta de post</a>
         <app-search-unrouted [placeHolder]="'Buscar post'" (onSearch)="setFilter( $event )"></app-search-unrouted>
@@ -37,6 +37,7 @@
             <th (click)="setOrder('visible')">Visible</th>
             <th (click)="setOrder('datetime')">Datetime</th>
             <th (click)="setOrder('user.id')">User</th>
+            <th>Opciones</th>
           </tr>
         </thead>
         <tbody>
@@ -46,7 +47,7 @@
             <td>{{post.body}}</td>
             <td>{{post.labels}}</td>
             <td>{{post.visible}}</td>
-            <td>{{post.datetime}}</td>            
+            <td>{{post.datetime}}</td>
             <td (click)="setFilterByUsertype(post.user.id)">
               {{post.user.id}}-{{post.user.name}}
             </td>

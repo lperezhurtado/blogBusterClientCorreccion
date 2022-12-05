@@ -31,5 +31,10 @@ export class PostService {
     return this.oHttp.get<IPage<IPost>>("http://localhost:8082/post", { params: params });
   }
 
+  getOne(id: number): Observable<IPost> {
+
+    return this.oHttp.get<IPost>("http://localhost:8082/post/" + id);
+  }
+
 
 }

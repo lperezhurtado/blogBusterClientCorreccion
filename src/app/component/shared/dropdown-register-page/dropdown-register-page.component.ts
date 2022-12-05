@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class DropdownRegisterPageComponent implements OnInit {
 
+
   @Input() PageSize!: number;
 
   @Output() eeRpp = new EventEmitter<number>();
@@ -18,4 +19,5 @@ export class DropdownRegisterPageComponent implements OnInit {
   onChangeRpp(nRpp:number){
     this.eeRpp.emit(nRpp);
   }
+
 }

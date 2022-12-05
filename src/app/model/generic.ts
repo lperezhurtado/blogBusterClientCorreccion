@@ -32,13 +32,13 @@ export interface IPage<T> {
 }
 
 export interface IUser {
-    id: number;
-    name: string;
-    surname: string;
-    lastname: string;
-    email: string;
-    username: string;
-    posts: number;
+  id:       number;
+  name:     string;
+  surname:  string;
+  lastname: string;
+  email:    string;
+  username: string;
+  posts:    number;
 }
 
 export interface IPost {

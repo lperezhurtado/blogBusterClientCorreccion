@@ -1,0 +1,15 @@
+
+<div class="container mt-5">
+  <div class="row">
+      <div class="col">
+          <h1 class="text-center mb-5">Borrado del  User {{oUser?.id}}</h1>
+
+          <app-table-user></app-table-user>
+
+          <div class="d-grid gap-2 col-6 mx-auto mt-4">
+            <button class="btn btn-outline-danger" (click)="deleteOne()" type="button">Borrar</button>
+            <button class="btn btn-outline-primary" type="button">Volver</button>
+          </div>
+      </div>
+  </div>
+</div>
